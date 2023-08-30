@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="images/frontImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Cada nuevo amigo es un <br> una nueva aventura</span>
+          <span class="text-2">Vamos a Conectarnos</span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="images/backImg.jpg" alt="">
+        <div class="text">
+          <span class="text-1">Contempla viajar <br> Nunca te detengas</span>
+          <span class="text-2">Empecemos</span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Iniciar Sesion</div>
+            <form action="login_proceso.php" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu Email"required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu Contraseña" required><br><br>
+              </div>
+              <div class="text"><a href="#">¿Has olvidado tu contraseña?</a></div>
+              <div class="button input-box">
+                <input type="submit" value="Iniciar Sesion">
+             
+              </div>
+              <div class="text sign-up-text">¿No tienes una cuenta? <label for="flip">Registrarse</label></div>
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Registrarse</div>
+          <form action="registro_proceso.php" method="post">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Ingresa tu Usuario" required>
+  
+            </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu Correo" required>
+
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Registrate">
+              </div>
+              <div class="text sign-up-text">¿Ya tienes una cuenta? <label for="flip">iniciar Sesion</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
